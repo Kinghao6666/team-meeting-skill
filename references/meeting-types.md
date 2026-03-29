@@ -180,3 +180,159 @@ Detailed flow definitions for each meeting type. The main SKILL.md references th
 - No clear success criteria
 - Unrealistic timeline without engineer buy-in
 - Skipping the "what's OUT of scope" discussion
+
+---
+
+## 7. retrospective (回顾会)
+
+**When to use**: End of a sprint/phase, after a major release, after an incident, or periodically to reflect on process.
+
+**Moderator**: Product (owns process improvement)
+
+**Speaking order**: Free-form in reflection phases, structured in commitment phase
+
+**Flow**:
+1. **What went well**: Each role shares 1-2 things that worked — celebrate wins
+2. **What went wrong**: Each role shares 1-2 pain points — no blame, focus on process
+3. **Root causes**: Team discusses WHY things went wrong, not just WHAT
+4. **Improvement actions**: Propose concrete changes (not "try harder")
+5. **Commitments**: Each role commits to ONE specific improvement for next cycle
+
+**Required output**:
+- Wins list (what to keep doing)
+- Pain points list (what to stop/change)
+- Root cause analysis for top 2-3 pain points
+- Improvement commitments with owners
+
+**Anti-patterns**:
+- Blame game ("you broke it" instead of "the process allowed this to happen")
+- Vague improvements ("communicate better" — HOW?)
+- Too many commitments (pick 2-3, not 10)
+- Skipping the celebration of wins (morale matters)
+
+---
+
+## 8. go-no-go (发布决策)
+
+**When to use**: Before a major release, launch, or irreversible deployment.
+
+**Moderator**: CEO (owns the final call)
+
+**Speaking order**: Engineer (technical readiness) → Product (feature completeness) → Designer (quality/polish) → Marketing (market readiness) → CEO (final decision)
+
+**Flow**:
+1. Each role declares **GO** or **NO-GO** with specific reasoning
+2. NO-GO items are listed as blockers with severity (critical/major/minor)
+3. Team debates: can blockers be mitigated without delaying?
+4. CEO makes final call: GO, NO-GO, or CONDITIONAL GO (go with known issues)
+5. If CONDITIONAL GO: list accepted risks explicitly
+
+**Required output**:
+- Per-role GO/NO-GO status with reasoning
+- Blocker list with severity
+- Final decision: GO / NO-GO / CONDITIONAL GO
+- If GO: launch date and rollback plan
+- If NO-GO: what must be fixed and revised target date
+
+**Anti-patterns**:
+- Rubber-stamping (everyone says GO without real assessment)
+- Perfectionism (NO-GO for minor polish issues)
+- No rollback plan (what if launch goes wrong?)
+- Ignoring marketing/market readiness (technically ready ≠ market ready)
+
+---
+
+## 9. sprint-planning (迭代规划)
+
+**When to use**: Start of a work week/sprint, planning the next iteration of work.
+
+**Moderator**: Product (owns the backlog)
+
+**Speaking order**: Product (priorities) → Engineer (capacity + estimates) → Designer (design needs) → Marketing (upcoming deadlines) → CEO (final scope)
+
+**Flow**:
+1. **Review last sprint**: Check commitments vs actuals — what shipped, what slipped, why
+2. **Present candidates**: Product lists top priority items from backlog
+3. **Estimate effort**: Engineer estimates each item (hours or T-shirt sizes)
+4. **Capacity check**: Total estimates vs available time — cut if overloaded
+5. **Commit**: Team agrees on the sprint scope — this is a promise, not a wish list
+6. **Assign owners**: Each item gets a clear owner
+
+**Required output**:
+- Last sprint review (shipped/slipped/why)
+- This sprint committed items with estimates and owners
+- Stretch goals (nice-to-have if time permits, clearly marked)
+- Total capacity vs committed load
+
+**Anti-patterns**:
+- Overcommitting (planning 50 hours of work for a 40-hour week)
+- No estimates ("we'll just see how far we get")
+- Carrying over slipped items without asking why they slipped
+- Not leaving buffer for unexpected work (bugs, urgent requests)
+
+---
+
+## 10. design-review (方案评审)
+
+**When to use**: Evaluating a technical architecture, visual design, or product proposal before implementation.
+
+**Moderator**: Engineer (for technical reviews) or Designer (for visual reviews)
+
+**Speaking order**: Presenter first → each role reviews from their perspective → open discussion → verdict
+
+**Flow**:
+1. **Present**: Proposer explains the design/architecture (goals, approach, trade-offs)
+2. **Per-role review**: Each role evaluates from their domain:
+   - Engineer: feasibility, performance, maintainability, tech debt
+   - Product: user value, requirement coverage, edge cases
+   - Designer: consistency, usability, visual quality
+   - Marketing: market fit, messaging implications
+   - CEO: strategic alignment, resource justification
+3. **Risk identification**: What could go wrong? What's the worst case?
+4. **Change requests**: Specific modifications required before approval
+5. **Verdict**: APPROVED / APPROVED WITH CHANGES / REJECTED (with reasons)
+
+**Required output**:
+- Design summary (what was reviewed)
+- Per-role feedback
+- Risk list
+- Change requests (if any)
+- Verdict with conditions
+
+**Anti-patterns**:
+- Reviewing without understanding the goals first
+- Bikeshedding (debating minor details while ignoring major risks)
+- No clear verdict (ending with "looks good I guess")
+- Approving without identifying any risks (nothing is risk-free)
+
+---
+
+## 11. demo (成果演示)
+
+**When to use**: Showing completed work to the team, end-of-sprint showcase, or validating that implementation matches expectations.
+
+**Moderator**: Product (owns acceptance criteria)
+
+**Speaking order**: Presenter demos → Product (acceptance check) → Designer (quality check) → Engineer (technical notes) → Marketing (positioning notes) → CEO (strategic fit)
+
+**Flow**:
+1. **Demo**: Walk through the completed work — show it running, not just describe it
+2. **Acceptance check**: Product verifies against original requirements — what's met, what's missing
+3. **Quality check**: Designer evaluates polish, consistency, UX issues
+4. **Technical notes**: Engineer flags any technical concerns discovered during demo
+5. **Feedback round**: Each role gives 1-2 specific feedback items
+6. **Gap list**: Compile all missing/broken/unpolished items
+7. **Next steps**: Prioritize gaps — fix now vs fix later vs won't fix
+
+**Required output**:
+- What was demoed (feature list)
+- Acceptance status per feature (pass/fail/partial)
+- Feedback list per role
+- Gap/issue list with priority
+- Next steps
+
+**Anti-patterns**:
+- Demoing slides instead of working software
+- "It works on my machine" without showing real scenarios
+- Only showing happy path (test edge cases too)
+- No acceptance criteria defined beforehand (can't evaluate without standards)
