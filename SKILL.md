@@ -201,6 +201,18 @@ After presenting the meeting output, ask the user if they want any of these:
 
 Only execute these with explicit user confirmation.
 
+### Consensus Update Guidelines
+
+When updating `memories/consensus.md`, follow these rules to maintain document quality:
+
+1. **No duplicates.** Before adding content, search the existing file for similar entries. If the information already exists, update it in place rather than appending a new block.
+2. **Maintain section order.** Respect the existing document structure. New decisions go under the relevant existing section, not appended at the bottom.
+3. **Completed items get checkmarks.** When a task/milestone is done, mark it `[x]` or `✅` in the existing checklist — don't create a new "completed" section.
+4. **Milestone table stays current.** After each meeting, verify the milestone table reflects reality: completed items marked, dates adjusted if decisions changed timelines.
+5. **Absolute dates only.** Never write "next week" or "in 3 days" — always use YYYY-MM-DD.
+6. **Keep it scannable.** consensus.md should be readable in under 3 minutes. If a section exceeds 20 lines, consider whether all detail is necessary or if some belongs in meeting minutes instead.
+7. **One source of truth.** If meeting decisions contradict existing consensus entries, update the old entry — don't leave both versions.
+
 ## Quality Rules
 
 1. **No empty agreement.** If all 5 roles agree immediately, you're doing it wrong. Find the tension.
